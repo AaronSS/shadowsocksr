@@ -16,6 +16,7 @@ RUN apk update \
     libsodium \
     unzip \
     wget \
+	nmap \
   && rm -rf /var/cache/apk/*
 
 
