@@ -19,6 +19,11 @@ RUN apk update \
   && rm -rf /var/cache/apk/*
 
 
+RUN  apk add openssh \
+     && /etc/init.d/sshd start
+
+
+
 
 RUN wget --no-check-certificate https://github.com/breakwa11/shadowsocks/archive/manyuser.zip -O /tmp/manyuser.zip \
     && unzip -d /tmp /tmp/manyuser.zip \
